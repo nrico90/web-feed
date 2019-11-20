@@ -6,6 +6,7 @@ import Title from "./components/Title";
 import LikeCounter from "./components/LikeCounter";
 import Image from "./components/Image";
 import Video from "./components/Video";
+import Nav from "./components/Nav";
 
 class App extends Component {
   state = {
@@ -25,10 +26,11 @@ class App extends Component {
     return (
       <div>
         <div className="App">
+          <Nav />
           <Video />
           <button onClick={this.toggleDarkLight}>Season</button>
           {/* PASSING PROPS FROM APP TO PROFILE */}
-          <Title />
+          {/* <Title /> */}
         </div>
 
         <header

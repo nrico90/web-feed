@@ -1,5 +1,6 @@
 import React from "react";
 import spinner from "../spinner.jpg";
+import LikeCounter from "./LikeCounter";
 export default class Image extends React.Component {
   state = {
     post: null
@@ -24,12 +25,15 @@ export default class Image extends React.Component {
       <div>
         {this.state.post.map(post => {
           return (
-            <div key={post.id}>
-              <p>
-                Name: {post.name} <br />
-                WebSite: {post.url}
-              </p>
-              <img className="image-post" src={post.hdurl} />
+            <div className="flexy" key={post.id}>
+              <section>
+                {/* <p>
+                  Name: {post.name} <br />
+                  WebSite: {post.url}
+                </p> */}
+                <img className="image-post" src={post.hdurl} />
+                <LikeCounter />
+              </section>
             </div>
           );
         })}
