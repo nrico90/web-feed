@@ -42,9 +42,7 @@ class App extends Component {
           }}
         >
           <div>
-            <Form />
             <Image />
-            <LikeCounter />
           </div>
         </header>
 
