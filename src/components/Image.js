@@ -2,6 +2,7 @@ import React from "react";
 import spinner from "../spinner.jpg";
 import LikeCounter from "./LikeCounter";
 import Form from "./Form";
+import CommentBox from "./CommentBox";
 
 export default class Image extends React.Component {
   state = {
@@ -36,6 +37,7 @@ export default class Image extends React.Component {
                 <img className="image-post" src={post.hdurl} />
                 <LikeCounter />
                 <Form />
+                <CommentBox />
               </section>
             </div>
           );
