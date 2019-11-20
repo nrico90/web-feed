@@ -7,6 +7,7 @@ import LikeCounter from "./components/LikeCounter";
 import Image from "./components/Image";
 import Video from "./components/Video";
 import Nav from "./components/Nav";
+import Form from "./components/Form";
 
 class App extends Component {
   state = {
@@ -41,6 +42,7 @@ class App extends Component {
           }}
         >
           <div>
+            <Form />
             <Image />
             <LikeCounter />
           </div>

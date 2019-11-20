@@ -1,6 +1,8 @@
 import React from "react";
 import spinner from "../spinner.jpg";
 import LikeCounter from "./LikeCounter";
+import Form from "./Form";
+
 export default class Image extends React.Component {
   state = {
     post: null
@@ -33,6 +35,7 @@ export default class Image extends React.Component {
                 </p> */}
                 <img className="image-post" src={post.hdurl} />
                 <LikeCounter />
+                <Form />
               </section>
             </div>
           );
