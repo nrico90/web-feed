@@ -4,7 +4,7 @@ class Nav extends Component {
   render() {
     return (
       <nav className="top_menubar">
-        <h1>Welcome to Trip-Travel, travelers!</h1>
+        <h1>Welcome to the Universe!</h1>
       </nav>
     );
   }
