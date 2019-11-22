@@ -7,6 +7,7 @@ import Form from "./components/Form";
 import { Route } from "react-router-dom";
 import Pages from "./components/Pages";
 import { Link } from "react-router-dom";
+import AboutUs from "./components/AboutUs";
 
 class App extends Component {
   state = {
@@ -40,8 +41,11 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Image} />
             <Route path="/pages" component={Pages} />
+            <Route path="/about" component={AboutUs} />
             <h2>
-              <Link to="/pages">More information</Link>
+              <Link to="/pages">Learn more</Link>
+              <br />
+              <Link to="/about">About us</Link>
             </h2>
           </div>
         </header>
