@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Nasa(props) {
+export default function Nasa() {
   return (
     <div className="pages-universe">
       <h1>This page has more infomation about NASA</h1>
@@ -12,7 +12,19 @@ export default function Nasa(props) {
       Click on the links below to find out more: <br />
       <br />
       <a target="_blank" href="https://www.nasa.gov/">
-        NASA oficial page
+        <button>
+          {" "}
+          <b>NASA</b>{" "}
+        </button>
+      </a>
+      <a
+        target="_blank"
+        href="http://nationalgeographic.com.au/tv/cosmos-a-spacetime-odyssey/"
+      >
+        <button>
+          {" "}
+          <b>COSMOS</b>{" "}
+        </button>
       </a>
     </div>
   );
