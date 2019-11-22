@@ -9,7 +9,7 @@ export default function Nasa() {
       <br />
       <br />
       <br />
-      Click on the links below to find out more: <br />
+      Click below to find out more: <br />
       <br />
       <a target="_blank" href="https://www.nasa.gov/">
         <button>

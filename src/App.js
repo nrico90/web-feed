@@ -28,7 +28,7 @@ class App extends Component {
       <div>
         <Video />
         <Nav />
-        <button onClick={this.toggleDarkLight}>Season</button>
+        <button onClick={this.toggleDarkLight}>Dark Mode</button>
         {/* PASSING PROPS FROM APP TO PROFILE */}
         {/* <Title /> */}
 
