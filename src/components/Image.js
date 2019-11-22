@@ -35,7 +35,6 @@ export default class Image extends React.Component {
                 </p> */}
                   <img className="image-post" src={post.hdurl} />
                   <LikeCounter />
-                  <Form />
                   <CommentBox />
                 </section>
               </div>
