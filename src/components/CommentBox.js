@@ -60,9 +60,11 @@ class CommentBox extends Component {
             </div>
           </div>
           <div className="field">
+            <br />
             <div className="control">
               <button className="button is-primary">Submit</button>
             </div>
+            <br />
           </div>
         </form>
       </div>

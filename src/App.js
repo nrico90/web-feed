@@ -8,6 +8,9 @@ import Image from "./components/Image";
 import Video from "./components/Video";
 import Nav from "./components/Nav";
 import Form from "./components/Form";
+import { Route } from "react-router-dom";
+import Pages from "./components/Pages";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -39,8 +42,18 @@ class App extends Component {
           }}
         >
           <div>
-            <Image />
+            <Route exact path="/" component={Image} />
+            <Route path="/pages" component={Pages} />
           </div>
+          <br />
+          <br />
+          <div>
+            <h2>
+              <Link to="/pages">More information</Link>
+            </h2>
+          </div>
+          <br />
+          <br />
         </header>
 
         <div></div>
