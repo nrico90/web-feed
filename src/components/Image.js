@@ -33,6 +33,7 @@ export default class Image extends React.Component {
                   Name: {post.name} <br />
                   WebSite: {post.url}
                 </p> */}
+                  <h2>NASA Picture</h2>
                   <img className="image-post" src={post.hdurl} />
                   <LikeCounter />
                   <CommentBox />

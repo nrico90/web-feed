@@ -9,8 +9,11 @@ export default function Nasa(props) {
       <br />
       <br />
       <br />
-      Click on the links below to find out more:{" "}
-      <Link to="https://www.nasa.gov/"> NASA oficial page</Link>
+      Click on the links below to find out more: <br />
+      <br />
+      <a target="_blank" href="https://www.nasa.gov/">
+        NASA oficial page
+      </a>
     </div>
   );
 }

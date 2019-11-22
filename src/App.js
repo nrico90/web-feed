@@ -44,16 +44,10 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Image} />
             <Route path="/pages" component={Pages} />
-          </div>
-          <br />
-          <br />
-          <div>
             <h2>
               <Link to="/pages">More information</Link>
             </h2>
           </div>
-          <br />
-          <br />
         </header>
 
         <div></div>
