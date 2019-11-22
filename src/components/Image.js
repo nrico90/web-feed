@@ -46,15 +46,3 @@ export default class Image extends React.Component {
     );
   }
 }
-
-/* <div>
-        {this.state.post.map(post => {
-          return (
-              <div key={post.id}>
-                  <p >
-                      Name: {post.name} <br/>
-                      WebSite: {post.url}
-                  </p>
-                  <img className="image-post" src= {post.hdurl} />
-                </div>);
-    </div> */
