@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-//import Video from "./videos/video.mp4";
-import Title from "./components/Title";
-//import Background from "./components/background-image";
-import LikeCounter from "./components/LikeCounter";
 import Image from "./components/Image";
 import Video from "./components/Video";
 import Nav from "./components/Nav";

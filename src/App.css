@@ -63,7 +63,7 @@ button:hover {
 img {
   width: 50%;
   height: auto;
-  border: 2px solid rgb(165, 118, 187);
+  padding-top: 5%;
 }
 
 section {
