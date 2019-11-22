@@ -7,14 +7,14 @@
 }
 
 .App-header {
-  /* background-color: #3362be; */
+  background-color: #3362be;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -31,7 +31,7 @@ video {
 }
 
 nav {
-  background-color: rgb(98, 175, 175);
+  background-color: rgb(11, 12, 12);
   padding: 1rem 0;
   width: 100%;
   position: fixed;
@@ -61,18 +61,18 @@ button:hover {
 }
 
 img {
-  width: 30%;
+  width: 50%;
   height: auto;
-  border: 2px solid rgb(159, 108, 218);
+  border: 2px solid rgb(165, 118, 187);
 }
 
 section {
-  border: 20px solid rgb(90, 90, 206);
+  border: 10px solid rgb(7, 7, 7);
   border-radius: 30px;
-  width: 45%;
+  width: 95%;
   min-height: 400px;
-  margin: 10px;
-  float: left;
+  margin: 30px;
+  float: center;
 }
 
 .body {

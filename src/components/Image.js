@@ -10,9 +10,7 @@ export default class Image extends React.Component {
   };
 
   componentDidMount() {
-    fetch(
-      "https://apodapi.herokuapp.com/api/?start_date=2018-10-05&end_date=2018-10-10&thumbs=true&image_thumbnail_size=480&image_thumbnail_size=240"
-    )
+    fetch("https://apodapi.herokuapp.com/api/?count=5")
       .then(response => response.json())
       .then(json => {
         this.setState({ post: json });
@@ -27,20 +25,22 @@ export default class Image extends React.Component {
     return (
       <div>
         {this.state.post.map(post => {
-          return (
-            <div className="flexy" key={post.id}>
-              <section>
-                {/* <p>
+          if (post.url !== null) {
+            return (
+              <div className="flexy" key={post.id}>
+                <section>
+                  {/* <p>
                   Name: {post.name} <br />
                   WebSite: {post.url}
                 </p> */}
-                <img className="image-post" src={post.hdurl} />
-                <LikeCounter />
-                <Form />
-                <CommentBox />
-              </section>
-            </div>
-          );
+                  <img className="image-post" src={post.hdurl} />
+                  <LikeCounter />
+                  <Form />
+                  <CommentBox />
+                </section>
+              </div>
+            );
+          }
         })}
       </div>
     );

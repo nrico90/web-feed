@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 //import Video from "./videos/video.mp4";
 import Title from "./components/Title";
-// import Background from "./components/background-image";
+//import Background from "./components/background-image";
 import LikeCounter from "./components/LikeCounter";
 import Image from "./components/Image";
 import Video from "./components/Video";
@@ -11,13 +11,13 @@ import Form from "./components/Form";
 
 class App extends Component {
   state = {
-    backgroundColor: "#282c34",
-    textColor: "white"
+    background: "#282c34",
+    textColor: "black"
   };
 
   toggleDarkLight = () => {
     if (this.state.backgroundColor === "white") {
-      this.setState({ backgroundColor: "#282c34", textColor: "white" });
+      this.setState({ backgroundColor: "#282c34", textColor: "black" });
     } else {
       this.setState({ backgroundColor: "white", textColor: "#282c34" });
     }
@@ -26,16 +26,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="App">
-          <Nav />
-          <Video />
-          <button onClick={this.toggleDarkLight}>Season</button>
-          {/* PASSING PROPS FROM APP TO PROFILE */}
-          {/* <Title /> */}
-        </div>
+        <Video />
+        <Nav />
+        <button onClick={this.toggleDarkLight}>Season</button>
+        {/* PASSING PROPS FROM APP TO PROFILE */}
+        {/* <Title /> */}
 
         <header
-          className="App-header"
           style={{
             backgroundColor: this.state.backgroundColor,
             color: this.state.textColor
